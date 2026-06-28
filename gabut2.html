@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Santri Baru</title>
+    <style>
+        /* Mengatur dasar halaman */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Container utama supaya konten di tengah */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1b4332;
+            font-size: 24px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #2d6a4f;
+            font-weight: 600;
+            margin-bottom: 25px;
+            font-size: 14px;
+            background-color: #e8f5e9;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        /* Form Styling */
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #495057;
+            font-size: 14px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus, select:focus {
+            border-color: #52b788;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(82, 183, 136, 0.2);
+        }
+
+        /* Tombol Kirim */
+        .btn-submit {
+            width: 100%;
+            background-color: #2d6a4f;
+            color: white;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            background-color: #1b4332;
+        }
+
+        /* Desain Kartu Anggota */
+        .card-member {
+            width: 100%;
+            max-width: 400px;
+            background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(27, 67, 50, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Variasi h2 di dalam kartu */
+        .card-member h2 {
+            margin: 0 0 20px 0;
+            font-size: 18px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .card-body {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 90px;
+            height: 110px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 12px;
+            font-weight: bold;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            object-fit: cover;
+        }
+
+        .card-info {
+            flex-content: 1;
+        }
+
+        .card-info p {
+            margin: 6px 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .card-info .label-card {
+            font-size: 11px;
+            opacity: 0.6;
+            text-transform: uppercase;
+            margin-bottom: -2px;
+            margin-top: 8px;
+        }
+
+        .card-info .value-card {
+            font-weight: 600;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ibad Ar Rahman</h1>
+        <div class="subtitle">PENDAFTARAN BERHASIL DIKIRIM</div>
+
+        <form>
+            <div class="form-group">
+                <label for="nama">Nama Antum:</label>
+                <input type="text" id="nama" placeholder="Masukkan namamu disini...">
+            </div>
+
+            <div class="form-group">
+                <label for="kelas">Kelas:</label>
+                <input type="text" id="kelas" placeholder="Masukkan kelasmu...">
+            </div>
+
+            <div class="form-group">
+                <label for="pilihan">Pilihan Masa Depan di Pondok:</label>
+                <select id="pilihan">
+                    <option value="">-- PILIH SALAH SATU --</option>
+                    <option value="Kultum">Kultum / Da'i</option>
+                    <option value="Tahfidz">Tahfidz Quran</option>
+                    <option value="Bahasa">Penguasaan Bahasa</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">Kirim Pendaftaran Santri</button>
+        </form>
+    </div>
+
+    <div class="card-member">
+        <h2>KARTU ANGGOTA SANTRI</h2>
+        
+        <div class="card-body">
+            <div class="profile-img">
+                Foto Profil
+            </div>
+            
+            <div class="card-info">
+                <div class="label-card">Nama Santri</div>
+                <div class="value-card">Nama Antum</div>
+                
+                <div class="label-card">Eskul / Pilihan</div>
+                <div class="value-card" style="font-size: 13px; font-weight: normal; font-style: italic;">
+                    pilihan eskul akan muncul di sini
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      // Tangkap elemen form-nya
+        const form = document.getElementById('formPendaftaran');
+
+        // Deteksi aksi ketika tombol Kirim/Submit ditekan
+        form.addEventListener('submit', function(event) {
+            // Mencegah halaman reload otomatis saat form dikirim
+            event.preventDefault();
+
+            // Ambil nilai dari input form
+            const namaInput = document.getElementById('nama').value;
+            const kelasInput = document.getElementById('kelas').value;
+            const pilihanInput = document.getElementById('pilihan').value;
+
+            // Masukkan nilainya ke dalam teks kartu anggota
+            document.getElementById('cardNama').innerText = namaInput;
+            document.getElementById('cardKelas').innerText = kelasInput;
+            
+            // Atur gaya teks pilihan kembali normal (tidak miring lagi)
+            const cardPilihan = document.getElementById('cardPilihan');
+            cardPilihan.innerText = pilihanInput;
+            cardPilihan.style.fontStyle = 'normal';
+            cardPilihan.style.fontWeight = '600';
+            cardPilihan.style.fontSize = '16px';
+
+            // Memberikan notifikasi sukses kecil
+            alert('Alhamdulillah, Data Kartu Anggota Berhasil Diperbarui!');
+        });
+    </script>
+    
+</body>
+</html>
+
